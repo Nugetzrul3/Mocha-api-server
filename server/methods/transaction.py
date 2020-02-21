@@ -1,6 +1,6 @@
 from server import utils
 from server import cache
-import config
+from server import config
 
 class Transaction():
 	@classmethod
@@ -26,7 +26,7 @@ class Transaction():
 			if data['result']['height'] != 0:
 				for index, vin in enumerate(data['result']['vin']):
 					if 'txid' in vin:
-						vin_data = utils.make_request('getrawtransaction', [vin['txid'], True])
+						vin_data = utils.make_request('gettransaction', [vin['txid'], True])
 						if vin_data['error'] is None:
 							data['result']['vin'][index]['scriptPubKey'] = vin_data['result']['vout'][vin['vout']]['scriptPubKey']
 							data['result']['vin'][index]['value'] = utils.satoshis(vin_data['result']['vout'][vin['vout']]['value'])
