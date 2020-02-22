@@ -1,7 +1,7 @@
 # Getting started
 --------------
 
-This is RESTful API which will allow you to interact with Sugarchain blockchain.
+This is RESTful API which will allow you to interact with Mochachain blockchain.
 
 # How to use it?
 --------------
@@ -12,7 +12,7 @@ First of all you have to create `config.py` file in root of project directory wi
 rid = 'api-server'
 cache = 3600  # Cache request for 1 hour
 secret = 'YOU SHOULD HAVE A VERY STRONG PASSWORD HERE'
-endpoint = 'http://rpcuser:rpcpassword@127.0.0.1:34229/' # RPC 34229 or 44229
+endpoint = 'http://rpcuser:rpcpassword@127.0.0.1:21104/' 
 host = '0.0.0.0'
 port = 1234
 debug = False
