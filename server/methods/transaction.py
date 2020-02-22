@@ -14,7 +14,7 @@ class Transaction():
 
 	@classmethod
 	def info(cls, thash: str):
-		data = utils.make_request('getrawtransaction', [thash, True])
+		data = utils.make_request('getrawtransaction', [thash, 1])
 
 		if data['error'] is None:
 			if 'blockhash' in data['result']:

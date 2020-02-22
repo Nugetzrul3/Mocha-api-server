@@ -144,7 +144,7 @@ class Price(Resource):
 	@stats.rest
 	def get(self):
 		data = General().price()
-		return utils.response(data['sugarchain'])
+		return utils.response(data['mochimo'])
 
 
 api.add_resource(GetInfo, '/info')
