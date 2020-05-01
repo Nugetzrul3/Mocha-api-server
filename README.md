@@ -1,7 +1,7 @@
 # Getting started
 --------------
 
-This is RESTful API which will allow you to interact with Mochachain blockchain.
+This is RESTful API which will allow you to interact with Nutucoin blockchain.
 
 # How to use it?
 --------------
